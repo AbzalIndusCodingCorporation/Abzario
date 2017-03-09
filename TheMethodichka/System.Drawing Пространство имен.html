@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx -->
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="WT.seg_1" content="ru-ru"><link rel="canonical" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx">
+    <title>System.Drawing Пространство имен</title>
+
+
+
+
+
+
+
+<meta name="DCS.dcsuri" content="/ru-ru/library/xs6ftd89(d=default,l=ru-ru,v=vs.110).aspx">
+
+<meta name="NormalizedUrl" content="https://msdn.microsoft.com/ru-ru/library/xs6ftd89(d=default,l=ru-ru,v=vs.110).aspx">
+
+<meta name="ms.normalizedurl" content="https://msdn.microsoft.com/ru-ru/library/xs6ftd89(d=default,l=ru-ru,v=vs.110).aspx">
+
+<meta name="ms.prod" content=".net-framework-4.6">
+
+<meta name="ms.devlang" content="csharp">
+
+<meta name="ms.topic" content="managed-reference">
+
+<meta name="AmbientContext" content="{&quot;layout.limit_max_width&quot;:false,&quot;AmbientContextId&quot;:&quot;B6D0072B-26D5-47A8-BF81-5DED4D865EFD&quot;,&quot;display.use_large_font&quot;:false,&quot;insight.perf_timing&quot;:true,&quot;AmbientContextDownstream&quot;:{&quot;LogTrace&quot;:false},&quot;display.high_contrast&quot;:false,&quot;insight.use_wedcs_vnext&quot;:true}">
+
+<meta name="VotingContextUrl" content="https://msdn.microsoft.com/ru-ru/library/xs6ftd89(d=default,l=ru-ru,v=vs.110).aspx">
+
+<meta name="MN" content="EE4293C1-2:07:38 AM">
+
+<meta name="Search.ShortId" content="xs6ftd89">
+
+<meta name="ms.shortidmsdn" content="xs6ftd89">
+
+<meta name="ms.locale" content="ru-ru">
+
+<meta name="ms.prodver" content="VS.110">
+
+<meta name="ms.contentlang" content="RU">
+
+<meta name="ms.lang" content="RU">
+
+<meta name="ms.loc" content="RU">
+
+<meta name="ms.sitever" content="2017.02.09.1">
+
+<meta name="ms.assetid" content="N:System.Drawing">
+
+<meta name="ms.auth" content="0">
+
+<meta name="ms.technology" content="dotnet-bcl">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+        
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="./System.Drawing Пространство имен_files/ai.0.js.Без названия" async=""></script><script type="text/javascript" data-do-not-move="true">
+        //<![CDATA[
+        var AmbientContext = null;
+
+        (function(){
+            var root = (function(){return this;}).call(null);
+
+            var GetCookie = function(name){
+                var cookies = root.document.cookie ? root.document.cookie.split('; ') : [];
+                for (var i = 0; i < cookies.length; i++) {
+                    var pos = cookies[i].indexOf('=');
+                    if (name === root.decodeURIComponent(cookies[i].slice(0, pos)))
+                    {
+                        var cookie = cookies[i].slice(pos + 1).replace(/\+/g, ' ');
+                        cookie = root.decodeURIComponent(cookie);
+                        return cookie;
+                    }
+                }
+            };
+
+            var JsonDeserialize = function(content) {
+                return root.JSON && root.JSON.parse ? root.JSON.parse(content) : (new Function('return (' + content + ')'))();
+            };
+
+            try {
+                AmbientContext = GetCookie('AmbientContext');
+                AmbientContext = AmbientContext && JsonDeserialize(AmbientContext);
+            } catch(ex) {
+            } finally {
+                AmbientContext = AmbientContext || null;
+            }
+        })();
+        //]]>
+    </script>
+
+    <script type="text/javascript" src="./System.Drawing Пространство имен_files/jquery-1.9.1.min.js.Без названия" data-do-not-move="true" data-provides="jQuery"></script>
+    
+<link rel="stylesheet" type="text/css" href="./System.Drawing Пространство имен_files/Combined.css"><script class="mtps-injected">try {
+/**/
+(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { 
+	"image": "https://i-msdn.sec.s-msft.com", 
+	"js": "https://i2-msdn.sec.s-msft.com", 
+	"css": "https://i-msdn.sec.s-msft.com", 
+	"ttf": "https://i-msdn.sec.s-msft.com"
+});
+/**/
+} finally { MTPS._injectNextScript_0 && MTPS._injectNextScript_0(); }</script><script class="mtps-injected">try {
+//
+
+        window.appInsightsId = '5eb1b2eb-c47a-497a-a7ac-a1c230b2882f';
+        //
+} finally { MTPS._injectNextScript_1 && MTPS._injectNextScript_1(); }</script><script class="mtps-injected" src="./System.Drawing Пространство имен_files/Combined.js.Без названия"></script><style type="text/css">:root #content > #right > .dose > .dosesingle,
+:root #content > #center > .dose > .dosesingle
+{display:none !important;}</style><link href="./System.Drawing Пространство имен_files/PrintView.css" rel="stylesheet" type="text/css" media="print"><meta name="ms.layout_limit_max_width" content="false"><meta name="ms.AmbientContextId" content="B6D0072B-26D5-47A8-BF81-5DED4D865EFD"><meta name="ms.display_use_large_font" content="false"><meta name="ms.insight_perf_timing" content="true"><meta name="ms.AmbientContextDownstream" content="%7B%7D"><meta name="ms.display_high_contrast" content="false"><meta name="ms.insight_use_wedcs_vnext" content="true"><meta name="ms.perf.timing" content=",,1,1,1,10,7705,7724,7766,7938,7939,8073,,,"><script type="text/javascript" src="./System.Drawing Пространство имен_files/ms.js.Без названия"></script><script type="text/javascript" src="./System.Drawing Пространство имен_files/jsll-3.2.0.js.Без названия"></script><script class="mtps-injected" src="./System.Drawing Пространство имен_files/SearchBox.jss"></script><script class="mtps-injected" src="./System.Drawing Пространство имен_files/JumpRedirect.js.Без названия"></script><script class="mtps-injected">try {
+//
+    MTPS = window.MTPS || {};
+    MTPS.Translation = window.MTPS.Translation || {};
+
+    MTPS.Translation.TranslationType =  0;
+    
+    
+        
+        MTPS.Translation.EditorLink = {
+            includeEditor : 0,
+            editLink: "https://msdn.microsoft.com/ru-ru/library/translation/edit/system.drawing(v=vs.110).aspx",
+            editLinkText: "Предложите более удачный вариант перевода"
+        };
+        
+    //
+} finally { MTPS._injectNextScript_5 && MTPS._injectNextScript_5(); }</script><script class="mtps-injected" src="./System.Drawing Пространство имен_files/Combined.js(1).Без названия"></script><script class="mtps-injected">try {
+MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = 'Развернуть'; MTPS.LocalizedStrings.CollapseButtonTooltip = 'Свернуть'; MTPS.LocalizedStrings.EnhancedExpandTooltip = 'Щелкните, чтобы развернуть. Щелкните дважды, чтобы развернуть все.'; MTPS.LocalizedStrings.EnhancedCollapseTooltip = 'Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все.'; MTPS.LocalizedStrings.ExpandAllButtonTooltip = 'Развернуть все'; MTPS.LocalizedStrings.CollapseAllButtonTooltip = 'Свернуть все';
+} finally { MTPS._injectNextScript_7 && MTPS._injectNextScript_7(); }</script><script class="mtps-injected" src="./System.Drawing Пространство имен_files/Combined.js(2).Без названия"></script><script src="./System.Drawing Пространство имен_files/broker.js.Без названия"></script><script class="mtps-injected">try {
+$(document).ready(function() {
+        try {
+            var token = $("#globalRequestVerification input[name='__RequestVerificationToken']").clone();
+            $("#siteFeedbackForm").append(token);
+        } catch(err) {
+            
+        }
+    });
+} finally { MTPS._injectNextScript_9 && MTPS._injectNextScript_9(); }</script></head>
+<body class="library Chrome">
+    <div id="page">
+
+        
+
+        
+    
+
+    
+    <link type="text/css" rel="stylesheet">
+    
+        
+        
+    <input type="hidden" id="isHeaderBleeding" value="true">
+    <div id="ux-header" dir="ltr" class="ltr msdn" ms.pgarea="header" data-device-type="desktop">
+        
+
+      <header ms.pgarea="header">
+        <span id="singleCol"></span>
+        <span id="doubleCol"></span>
+        <span id="isMobile"></span>
+        <div>
+          <div class="row topRow" role="banner">
+            <div class="top">
+              <div class="left">
+                <a class="msdnLogoImg" href="https://msdn.microsoft.com/ru-ru" title="MSDN home" ms.cmpgrp="mslogo">
+                  <div class="clip70x15">
+                    <img alt="Microsoft Logo" id="msft-logo" class="msft-logo" src="./System.Drawing Пространство имен_files/HeaderFooterSprite.png">
+                  </div>
+                </a>
+                <div class="GrayPipeDiv clip1x18">
+                  <img alt="Gray Pipe" class="GrayPipe" src="./System.Drawing Пространство имен_files/HeaderFooterSprite.png">
+                </div>
+                  <a class="DevCenterFullNameNonMegaBlade" href="https://msdn.microsoft.com/ru-ru">Developer Network</a>
+                <a class="DevCenterFullName" href="https://msdn.microsoft.com/ru-ru">Developer Network</a>
+                <a class="DevCenterShortName" href="https://msdn.microsoft.com/ru-ru">Developer</a>
+              </div>
+              <div class="right" ms.cmpgrp="aux nav">
+                <div id="signIn" aria-label="Profile button">
+
+  <div class="profileImage"></div>
+
+
+
+<a class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=13&amp;ct=1487844458&amp;rver=6.7.6640.0&amp;wp=mcmbi&amp;wlcxt=msdn%24msdn%24msdn&amp;wreply=https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2fsystem.drawing%2528v%3dvs.110%2529.aspx&amp;lc=1049&amp;id=254354&amp;mkt=ru-ru">Войти</a></div>
+
+
+
+
+                <div class="auxNav">
+                  <div>
+                    <div data-fragmentname="Subscriptions" id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/subscriptions/manage/hh442900" id="Subscriptions_2153_1" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="line-height:18px;" xmlns="">Подписки MSDN</span>
+  </a>
+</div>
+                    <div data-fragmentname="GetTools" id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://go.microsoft.com/fwlink/?LinkId=309297&amp;clcid=0x419&amp;slcid=0x419&amp;campaign=o~msft~msdn~gettools-header~dn308572" id="GetTools_2153_3" xmlns="http://www.w3.org/1999/xhtml">
+    <span style="line-height:18px;" xmlns="">Получить инструменты</span>
+  </a>
+</div>
+                  </div>
+                        <div>
+                            
+                        </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="row middleRow">
+            <div class="expandTop" style="display: none;">
+              <div class="left"></div>
+              <div class="right"></div>
+            </div>
+          </div>
+        </div>
+        <div id="buttomRowWrapper" class="bg_default">
+          <div class="row buttomRow bg_default">
+            <div class="bottom">
+              <div class="left" role="navigation" aria-label="header toc" ms.cmpgrp="main nav">
+                <a id="grip" class="menu-icon" href="javascript:void(0)" role="button" aria-label="navigation menu"></a>
+                
+                <div id="drawer">
+                  <div class="toc">
+                    
+        <nav>
+            <ul class="navL1" ms.cmpgrp="main nav">
+                        <li class="inactive toggle">
+                                <a href="javascript:void(0)" role="button" aria-expanded="false">Загрузки</a>
+                                <ul class="navL2" style="display: none;">
+                                        <li class="inactive">
+
+                                                <a href="https://www.visualstudio.com/ru/downloads/" role="link" title="Visual Studio">Visual Studio</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/microsoft-sdks-msdn" role="link" title="Пакеты SDK">Пакеты SDK</a>
+                                        </li>
+                                        <li class="inactive toggle">
+
+                                                <a href="javascript:void(0)" title="Пробные версии программ" role="button" aria-expanded="false">Пробные версии программ</a>
+                                                <ul class="navL3" style="display: none;">
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/evalcenter" title="Бесплатное скачивание" role="link">Бесплатное скачивание</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/officeevaluationresources" title="Ресурсы Office" role="link">Ресурсы Office</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/sharepoint2013resources" title="Ресурсы Microsoft SharePoint Server 2013" role="link">Ресурсы Microsoft SharePoint Server 2013</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/sqlserver2014expressresources" title="Ресурсы Microsoft SQL Server 2014 Express" role="link">Ресурсы Microsoft SQL Server 2014 Express</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/windowsserver2012r2resources" title="Материалы Windows Server 2012 R2" role="link">Материалы Windows Server 2012 R2</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                                <a href="javascript:void(0)" role="button" aria-expanded="false">Программы</a>
+                                <ul class="navL2" style="display: none;">
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/msdn-subscriptions-administration" role="link" title="Подписки администраторам">Подписки администраторам</a>
+                                        </li>
+                                        <li class="inactive toggle">
+
+                                                <a href="javascript:void(0)" title="Студентам" role="button" aria-expanded="false">Студентам</a>
+                                                <ul class="navL3" style="display: none;">
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/imagine/imagine-home" title="Microsoft Imagine" role="link">Microsoft Imagine</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/microsoftstudentpartners" title="Программа Microsoft Student Partners" role="link">Программа Microsoft Student Partners</a>
+                                                        </li>
+                                                </ul>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://www.microsoft.com/ru-ru/isvs" role="link" title="ISV">ISV</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://www.microsoft.com/ru-ru/ms-start" role="link" title="Стартапам">Стартапам</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://events.microsoft.com/" role="link" title="Мероприятия">Мероприятия</a>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                                <a href="javascript:void(0)" role="button" aria-expanded="false">Сообщество</a>
+                                <ul class="navL2" style="display: none;">
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/magazine/dd767791" role="link" title="Журнал MSDN">Журнал MSDN</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://social.msdn.microsoft.com/forums/" role="link" title="Форумы">Форумы</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://blogs.msdn.microsoft.com/rudevnews/" role="link" title="Блог">Блог</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="http://channel9.msdn.com/" role="link" title="Канал Channel 9">Канал Channel 9</a>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive current toggle">
+                                <a href="javascript:void(0)" role="button" aria-expanded="false">Документация</a>
+                                <ul class="navL2" style="display: none;">
+                                        <li class="inactive current">
+
+                                                <a href="https://msdn.microsoft.com/library" role="link" title="API и справочники">API и справочники</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/developer-centers-msdn" role="link" title="Центры разработки">Центры разработки</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://code.msdn.microsoft.com/" role="link" title="Примеры кода">Примеры кода</a>
+                                        </li>
+                                        <li class="inactive">
+
+                                                <a href="https://msdn.microsoft.com/retiredcontent" role="link" title="Более не поддерживаемое содержимое">Более не поддерживаемое содержимое</a>
+                                        </li>
+                                </ul>
+                        </li>
+            </ul>
+        </nav>
+
+                  </div>
+                </div>
+              </div>
+              <div class="right" ms.title="search" role="search">
+                <div data-fragmentname="SearchBox" id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="SearchBox">
+    <form id="HeaderSearchForm" name="HeaderSearchForm" method="get">
+      <button id="FakeHeaderSearchButton" value="Search" type="submit" class="header-search-button" role="button" aria-label="search finder" ms.interactiontype="2" ms.title="search" ms.pgarea="header" ms.searchtype="icon">
+        <div id="search-finder-div" class="clip16x20">
+          <img alt="search finder" id="search-finder" class="search-finder" src="./System.Drawing Пространство имен_files/HeaderFooterSprite.png">
+        </div>
+      </button>
+      <button id="HeaderSearchButton" style="display:none" data-searchtype="icon" data-pgarea="header" title="Поиск в MSDN" ms.interactiontype="2" ms.title="search" ms.pgarea="header" ms.searchtype="icon"></button>
+      <div id="searchSplitter"></div>
+      <div id="searchCloseIconDiv" class="clip16x20" tabindex="0">
+        <img alt="search clear" id="searchCloseIcon" class="search-clear-x" src="./System.Drawing Пространство имен_files/HeaderFooterSprite.png">
+      </div>
+      <div id="searchTextContainer" style="width: 0px; display: none;"><p role="alert" style="height: 1px;width: 1px;overflow: hidden;position: absolute;"></p>
+        <input id="HeaderSearchTextBox" name="query" type="text" aria-label="Search Input Box" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)" autocomplete="off" data-searchtype="searchbox" role="combobox" aria-autocomplete="both" aria-owns="MSDNSearchAutoCompleteList" aria-live="polite" placeholder="" data-pgarea="header" ms.interactiontype="2" ms.title="search" ms.pgarea="header" ms.searchtype="enter-key">
+      <div id="SearchFlyoutContainer" style="display: none; text-align: left; border: 1px solid buttonshadow; position: absolute; z-index: 1000; padding: 2px; background-color: rgb(255, 255, 255); color: rgb(255, 255, 255); font-family: Arial; font-size: 16px;"><div id="SuggestionContainer"><ul data-pgarea="header" data-searchtype="search dropdown" id="MSDNSearchAutoCompleteList" role="listbox" aria-controls="HeaderSearchTextBox" style="list-style: none; padding: 4px 2px 0px 1px; cursor: pointer; margin: 1px; white-space: nowrap;" ms.interactiontype="2" ms.title="search" ms.pgarea="header" ms.searchtype="suggested keyword"></ul></div></div></div>
+    </form>
+    
+    
+  </div>
+</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
+
+    <div id="overlayMaskHeader"></div></div>
+
+    
+    
+    
+    <div id="jumpInfo" style="display: none">Приносим извинения. Запрошенное содержимое было удалено. Вы будете автоматически перенаправлены через 1 секунду.</div>
+
+
+
+
+
+<link type="text/css" rel="stylesheet">
+<link type="text/css" rel="stylesheet">
+
+
+    <div id="breadcrumbs" ms.pgarea="body" ms.cmpgrp="breadcrumbs">
+        <div id="breadcrumbDesktop" class="breadCrumb">
+                        <span class="breadcrumbEllipsis"><a href="https://msdn.microsoft.com/ru-ru/library/aa139615.aspx" title="Разработка на .NET"></a></span>
+                        <span><a href="https://msdn.microsoft.com/ru-ru/library/w0x726c2(v=vs.110).aspx" title=".NET Framework 4.6 and 4.5"><span>.NET Framework 4.6 and 4.5</span></a></span>
+                        <span><a href="https://msdn.microsoft.com/ru-ru/library/mt472912(v=vs.110).aspx" title="Библиотека классов .NET Framework"><span>Библиотека классов .NET Framework</span></a></span>
+                        <span class="breadcrumbDropSmall">
+                            <a id="breadcrumbDropDownButton" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#" targethref="https://msdn.microsoft.com/ru-ru/library/mt472912(v=vs.110).aspx" title="System.Drawing Пространства имен" role="button" aria-expanded="false"><span>System.Drawing Пространства имен</span></a>
+                        </span>
+        </div>
+        <div id="breadcrumbDropDownMenu" style="display: none;"></div>
+
+        <div id="breadcrumbTablet" class="breadCrumb">
+                        <span class="breadcrumbEllipsis"><a href="https://msdn.microsoft.com/ru-ru/library/mt472912(v=vs.110).aspx" title="Библиотека классов .NET Framework"></a></span>
+                    <span><a href="https://msdn.microsoft.com/ru-ru/library/mt481535(v=vs.110).aspx" title="System.Drawing Пространства имен"><span>System.Drawing Пространства имен</span></a></span>
+                <span class="breadcrumbDropSmall"><a id="tocDropDownButton" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#" title="System.Drawing" role="button" aria-expanded="false"><span>System.Drawing</span></a></span>
+        <div id="navigationButtons">
+            <a id="isd_print" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(d=printer,v=vs.110).aspx" rel="nofollow"><ins class="print"></ins>Печать </a>
+            <a id="isd_printABook" href="https://msdn.microsoft.com/ru-ru/library/export/help/?returnurl=%2fru-ru%2flibrary%2fsystem.drawing(v%3dvs.110).aspx">
+                <ins class="export"></ins>Экспорт (<span class="count">0</span>)
+            </a>
+        </div></div>
+        <div id="tocDropDownMenu" style="display: none;"></div>
+        <div id="breadcrumbMobile" class="breadCrumb">
+                <span class="breadcrumbEllipsis"><a href="https://msdn.microsoft.com/ru-ru/library/mt481535(v=vs.110).aspx" title="System.Drawing Пространства имен"></a></span>
+            <span class="breadcrumbDropSmall"><a id="tocPopupButton" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#" title="System.Drawing" role="button" aria-expanded="false"><span>System.Drawing</span></a></span>
+        <div id="navigationButtons">
+            <a id="isd_print" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(d=printer,v=vs.110).aspx" rel="nofollow"><ins class="print"></ins>Печать </a>
+            <a id="isd_printABook" href="https://msdn.microsoft.com/ru-ru/library/export/help/?returnurl=%2fru-ru%2flibrary%2fsystem.drawing(v%3dvs.110).aspx">
+                <ins class="export"></ins>Экспорт (<span class="count">0</span>)
+            </a>
+        </div></div>
+    </div>
+    <div id="tocPopupMenu" style="display: none;">
+        <div id="tocPopMenuClose" class="tocCloseLarge" role="button" aria-label="Close Popup Menu" tabindex="0"></div>
+        <div id="tocTitle">System.Drawing</div>        
+    </div>
+
+    
+
+
+        <div id="body" ms.pgarea="body" class="">
+            <span id="tabletView_large"></span>
+            <span id="tabletView_small"></span>
+            <span id="mobileView"></span>
+            
+
+
+
+
+
+
+
+
+
+    <div id="leftNav" ms.cmpgrp="left toc" role="navigation" aria-label="left toc" style="height: auto;">
+
+    
+
+
+<div id="tocnav" class="ArchiveV2" style="">
+    <div class="tocunselected">
+        <div id="tocExpandArea">
+            <span class="toc_empty"></span>
+            <span id="tocExpandButton"><a href="javascript:void(0)" aria-label="expand sibling toc" role="button"></a></span>
+        </div>
+        <div id="tocExpand"></div>
+    </div>
+    <div class="tocselected"><div class="toclevel current" data-toclevel="1" data-childrenloaded="true">
+<a class="toc_expanded" href="javascript:void(0)" role="button" aria-label="Свернуть оглавление" aria-expanded="true"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx" id="mt438993_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="System.Drawing">System.Drawing</a>                </div><div class="tocPadding"><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bitmap(v=vs.110).aspx" id="mt525248_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Bitmap Класс">Bitmap Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bitmapsuffixinsameassemblyattribute(v=vs.110).aspx" id="mt525214_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="BitmapSuffixInSameAssemblyAttribute Класс">BitmapSuffixInSameAssemblyAttribute Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bitmapsuffixinsatelliteassemblyattribute(v=vs.110).aspx" id="mt525183_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="BitmapSuffixInSatelliteAssemblyAttribute Класс">BitmapSuffixInSatelliteAssemblyAttribute Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.brush(v=vs.110).aspx" id="mt540279_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Brush Класс">Brush Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.brushes(v=vs.110).aspx" id="mt438947_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Brushes Класс">Brushes Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bufferedgraphics(v=vs.110).aspx" id="mt525193_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="BufferedGraphics Класс">BufferedGraphics Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bufferedgraphicscontext(v=vs.110).aspx" id="mt525232_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="BufferedGraphicsContext Класс">BufferedGraphicsContext Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bufferedgraphicsmanager(v=vs.110).aspx" id="mt525204_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="BufferedGraphicsManager Класс">BufferedGraphicsManager Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.characterrange(v=vs.110).aspx" id="mt525215_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="CharacterRange Структура">CharacterRange Структура</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.color(v=vs.110).aspx" id="mt525290_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Color Структура">Color Структура</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.colorconverter(v=vs.110).aspx" id="mt525303_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="ColorConverter Класс">ColorConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.colortranslator(v=vs.110).aspx" id="mt525252_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="ColorTranslator Класс">ColorTranslator Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.contentalignment(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="ContentAlignment Перечисление">ContentAlignment Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.copypixeloperation(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="CopyPixelOperation Перечисление">CopyPixelOperation Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.font(v=vs.110).aspx" id="mt525298_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Font Класс">Font Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontconverter(v=vs.110).aspx" id="mt525260_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="FontConverter Класс">FontConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontconverter.fontnameconverter(v=vs.110).aspx" id="mt525271_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="FontConverter.FontNameConverter Класс">FontConverter.FontNameConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontconverter.fontunitconverter(v=vs.110).aspx" id="mt525269_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="FontConverter.FontUnitConverter Класс">FontConverter.FontUnitConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontfamily(v=vs.110).aspx" id="mt525274_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="FontFamily Класс">FontFamily Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontstyle(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="FontStyle Перечисление">FontStyle Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics(v=vs.110).aspx" id="mt540299_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Graphics Класс">Graphics Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics.drawimageabort(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Graphics.DrawImageAbort Делегат">Graphics.DrawImageAbort Делегат</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics.enumeratemetafileproc(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Graphics.EnumerateMetafileProc Делегат">Graphics.EnumerateMetafileProc Делегат</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphicsunit(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="GraphicsUnit Перечисление">GraphicsUnit Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.icon(v=vs.110).aspx" id="mt540293_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Icon Класс">Icon Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.iconconverter(v=vs.110).aspx" id="mt540290_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="IconConverter Класс">IconConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.idevicecontext(v=vs.110).aspx" id="mt540297_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="IDeviceContext Интерфейс">IDeviceContext Интерфейс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.image(v=vs.110).aspx" id="mt540354_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Image Класс">Image Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.image.getthumbnailimageabort(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Image.GetThumbnailImageAbort Делегат">Image.GetThumbnailImageAbort Делегат</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imageanimator(v=vs.110).aspx" id="mt540339_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="ImageAnimator Класс">ImageAnimator Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imageconverter(v=vs.110).aspx" id="mt540323_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="ImageConverter Класс">ImageConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imageformatconverter(v=vs.110).aspx" id="mt540324_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="ImageFormatConverter Класс">ImageFormatConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.knowncolor(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="KnownColor Перечисление">KnownColor Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pen(v=vs.110).aspx" id="mt540331_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Pen Класс">Pen Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pens(v=vs.110).aspx" id="mt540392_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Pens Класс">Pens Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.point(v=vs.110).aspx" id="mt540322_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Point Структура">Point Структура</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pointconverter(v=vs.110).aspx" id="mt540335_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="PointConverter Класс">PointConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pointf(v=vs.110).aspx" id="mt540375_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="PointF Структура">PointF Структура</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rectangle(v=vs.110).aspx" id="mt540395_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Rectangle Структура">Rectangle Структура</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rectangleconverter(v=vs.110).aspx" id="mt540397_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="RectangleConverter Класс">RectangleConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rectanglef(v=vs.110).aspx" id="mt540416_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="RectangleF Структура">RectangleF Структура</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.region(v=vs.110).aspx" id="mt540419_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Region Класс">Region Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rotatefliptype(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="RotateFlipType Перечисление">RotateFlipType Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.size(v=vs.110).aspx" id="mt540406_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="Size Структура">Size Структура</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.sizeconverter(v=vs.110).aspx" id="mt540446_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SizeConverter Класс">SizeConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.sizef(v=vs.110).aspx" id="mt540447_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SizeF Структура">SizeF Структура</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.sizefconverter(v=vs.110).aspx" id="mt540463_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SizeFConverter Класс">SizeFConverter Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.solidbrush(v=vs.110).aspx" id="mt540454_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SolidBrush Класс">SolidBrush Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringalignment(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="StringAlignment Перечисление">StringAlignment Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringdigitsubstitute(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="StringDigitSubstitute Перечисление">StringDigitSubstitute Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringformat(v=vs.110).aspx" id="mt540513_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="StringFormat Класс">StringFormat Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringformatflags(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="StringFormatFlags Перечисление">StringFormatFlags Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringtrimming(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="StringTrimming Перечисление">StringTrimming Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<span class="toc_empty"></span><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringunit(v=vs.110).aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="StringUnit Перечисление">StringUnit Перечисление</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systembrushes(v=vs.110).aspx" id="mt540515_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SystemBrushes Класс">SystemBrushes Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systemcolors(v=vs.110).aspx" id="mt540455_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SystemColors Класс">SystemColors Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systemfonts(v=vs.110).aspx" id="mt540448_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SystemFonts Класс">SystemFonts Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systemicons(v=vs.110).aspx" id="mt540449_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SystemIcons Класс">SystemIcons Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systempens(v=vs.110).aspx" id="mt540452_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="SystemPens Класс">SystemPens Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.texturebrush(v=vs.110).aspx" id="mt540445_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="TextureBrush Класс">TextureBrush Класс</a>                </div><div class="toclevel " data-toclevel="2">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.toolboxbitmapattribute(v=vs.110).aspx" id="mt540436_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="ToolboxBitmapAttribute Класс">ToolboxBitmapAttribute Класс</a>                </div></div></div>
+    <div class="tocunselected">
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="toclevel " data-toclevel="1">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.configuration(v=vs.110).aspx" id="mt540468_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="System.Drawing.Configuration">System.Drawing.Configuration</a>                </div>
+                <div class="toclevel " data-toclevel="1">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.design(v=vs.110).aspx" id="mt540530_VS.110_ru-ru" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="System.Drawing.Design">System.Drawing.Design</a>                </div>
+                <div class="toclevel " data-toclevel="1">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.drawing2d(v=vs.110).aspx" id="mt525402_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="System.Drawing.Drawing2D">System.Drawing.Drawing2D</a>                </div>
+                <div class="toclevel " data-toclevel="1">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imaging(v=vs.110).aspx" id="mt525479_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="System.Drawing.Imaging">System.Drawing.Imaging</a>                </div>
+                <div class="toclevel " data-toclevel="1">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.printing(v=vs.110).aspx" id="mt540545_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="System.Drawing.Printing">System.Drawing.Printing</a>                </div>
+                <div class="toclevel " data-toclevel="1">
+<a class="toc_collapsed" href="javascript:void(0)" role="button" aria-label="Развернуть оглавление" aria-expanded="false"></a><a data-tochassubtree="true" href="https://msdn.microsoft.com/ru-ru/library/system.drawing.text(v=vs.110).aspx" id="mt540590_VS.110_ru-RU" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="System.Drawing.Text">System.Drawing.Text</a>                </div>
+    </div>
+    <a id="tocMenuToggler" href="javascript:void(0)" role="button">
+        <span id="tocMenuTogglerIcon" class="tocMenuCollapse" role="button" aria-expanded="true" aria-label="Table of contents menu"></span>
+        <div id="tocMenuTogglerLabel">TOC</div>
+    </a>
+</div>            <div style="display:none">
+                <div id="CollapseLocalizeString">Свернуть оглавление</div>
+                <div id="ExpandLocalizeString">Развернуть оглавление</div>
+            </div>
+        <div>
+            <a id="isd_archiveControlResponsive" style="display:none;" href="javascript:void(0)" role="button" aria-label="Скрыть архивные версии" data-include-archive="Показать архивные версии" data-exclude-archive="Скрыть архивные версии">
+            </a>
+            <div id="isd_archiveInstrument" style="display:none">Эта документация перемещена в архив и не поддерживается.</div>
+        </div>
+    </div>
+     <div id="content" class="content" ms.cmpgrp="content body" role="main">
+
+
+
+<div id="MTPSTranslator" class="MTPSTranslator">
+    <table class="MTPSTranslatorTable" style="width: 100%">
+        <tbody><tr>
+            <td class="TranslationAlertBox">
+                <div>Данная статья переведена с помощью средств машинного перевода. Чтобы просмотреть ее на английском языке, установите флажок Английский. Вы также можете просматривать английский текст во всплывающем окне, наводя указатель мыши на переведенный текст.</div>
+            </td>
+                <td class="TranslationViewSwitcher">
+                    <div>
+                        <input title="Показать перевод" value="0" name="TrnaslatorView" type="radio" class="translatechoice" checked="checked" ms.title="translated" ms.cmptyp="language selector" ms.interactiontype="16"><span>Перевод</span>
+                    </div>
+                    <div>
+                        <input title="Показать текст на английском языке" value="1" name="TrnaslatorView" type="radio" class="translatechoice" ms.title="original" ms.cmptyp="language selector" ms.interactiontype="16"><span>Английский</span>
+                    </div>
+                </td>
+        </tr>
+    </tbody></table>
+</div>
+    
+    
+    
+     
+
+
+
+
+
+
+
+    <div id="archiveDisclaimerText" style="display:none">Эта документация перемещена в архив и не поддерживается.</div>
+
+
+
+<div xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="topic">
+    <h1 class="title">Пространство имен System.Drawing</h1>
+    
+    <div class="lw_vs">
+      <div id="curversion">
+        <strong>
+                .NET Framework (current version)
+            </strong>
+      </div>
+      <div id="versionclick">
+        <div id="vsseperator" class="cl_lw_vs_seperator"></div>
+        <div>
+          <div>
+            <a id="vsLink" href="javascript:void(0)" role="button" aria-label="Другие версии" aria-expanded="false">
+                        Другие версии
+                    </a>
+          </div>
+          <div class="cl_vs_arrow clip10x10">
+            <img class="cl_lw_vs_arrow" id="vsArrow" alt="" src="./System.Drawing Пространство имен_files/ImageSprite.png">
+          </div>
+        </div>
+        <ul id="vsPanel">
+          <li class="archived"><a href="javascript:void(0)" role="img" title="Эта документация перемещена в архив и не поддерживается."></a>
+            <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.100).aspx">Visual Studio 2010</a>
+          </li>
+          <li class="archived"><a href="javascript:void(0)" role="img" title="Эта документация перемещена в архив и не поддерживается."></a>
+            <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.100).aspx">.NET Framework 4</a>
+          </li>
+          <li class="archived"><a href="javascript:void(0)" role="img" title="Эта документация перемещена в архив и не поддерживается."></a>
+            <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.90).aspx">Visual Studio 2008</a>
+          </li>
+          <li class="archived"><a href="javascript:void(0)" role="img" title="Эта документация перемещена в архив и не поддерживается."></a>
+            <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.90).aspx">.NET Framework 3.5</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div id="mainSection">
+      <div id="mainBody">&nbsp;<p>Опубликовано: Октябрь 2016</p><div class="section"><div class="section"><p><span id="mt1" class="sentence" data-guid="6616b550831fb0a84c76180cf05a27f2" data-source="The &lt;span class=&quot;selflink&quot;&gt;System.Drawing&lt;/span&gt; namespace provides access to GDI+ basic graphics functionality." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Пространство имен <span class="selflink" xmlns="http://www.w3.org/1999/xhtml">System.Drawing</span> обеспечивает доступ к базовым функциональным возможностям графического интерфейса GDI+.</sentencetext></span><span id="mt2" class="sentence" data-guid="b1c163951e938c7ae183d2490f35b5a0" data-source=" More advanced functionality is provided in the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;System.Drawing.Drawing2D&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;System.Drawing.Imaging&lt;/span&gt;&lt;/span&gt;, and &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;System.Drawing.Text&lt;/span&gt;&lt;/span&gt; namespaces." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Пространства имен <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.drawing2d(v=vs.110).aspx">System.Drawing.Drawing2D</a>, <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imaging(v=vs.110).aspx">System.Drawing.Imaging</a> и <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.text(v=vs.110).aspx">System.Drawing.Text</a> обеспечивают дополнительные функциональные возможности.</sentencetext></span></p></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Классы</span></a><div id="Anchor_0" class="LW_CollapsibleArea_Anchor_Div active"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Anchor_0" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><div class="contentTableWrapper"><table id="idClasses" responsive="true" summary="table"><tbody><tr responsive="true"><th class="iconColumn" scope="col"></th><th class="nameColumn" scope="col">Класс</th><th class="descriptionColumn" scope="col">Описание</th></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bitmap(v=vs.110).aspx">Bitmap</a></td><td data-th="Описание"><div class="section"><p><span id="mt9" class="sentence" data-guid="f3191c727030c7ae1d79f3bf909a9dbe" data-source="Encapsulates a GDI+ bitmap, which consists of the pixel data for a graphics image and its attributes." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <sentencetext xmlns="http://www.w3.org/1999/xhtml">Инкапсулирует GDI+ точечного рисунка, который состоит из данных о пикселях графического изображения и его атрибуты.</sentencetext>
+</sentencetext></span><span id="mt10" class="sentence" data-guid="d9ae79d3e8ed44fbda3b614c6d12122d" data-source=" A &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Bitmap&lt;/span&gt;&lt;/span&gt; is an object used to work with images defined by pixel data." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <sentencetext xmlns="http://www.w3.org/1999/xhtml">A <span>Bitmap</span> — объект, используемый для работы с изображениями, определяемых данными о пикселях.</sentencetext>
+</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bitmapsuffixinsameassemblyattribute(v=vs.110).aspx">BitmapSuffixInSameAssemblyAttribute</a></td><td data-th="Описание"><div class="section"><p><span id="mt11" class="sentence" data-guid="8a41e2b267031da4174af4476dfecd02" data-source="Specifies that, when interpreting &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;ToolboxBitmapAttribute&lt;/span&gt;&lt;/span&gt; declarations, the assembly should look for the indicated resources in the same assembly, but with the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;BitmapSuffix&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; configuration value appended to the declared file name." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает, что, когда Интерпретация <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.toolboxbitmapattribute(v=vs.110).aspx">ToolboxBitmapAttribute</a> объявления, сборка будет искать указанных ресурсов в той же сборке, но с <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.configuration.systemdrawingsection.bitmapsuffix(v=vs.110).aspx"><span xmlns="">BitmapSuffix</span></a> значение конфигурации, добавленным к имени файла объявленный.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bitmapsuffixinsatelliteassemblyattribute(v=vs.110).aspx">BitmapSuffixInSatelliteAssemblyAttribute</a></td><td data-th="Описание"><div class="section"><p><span id="mt12" class="sentence" data-guid="cec633c68cbd37e950bca08da1fb506e" data-source="Specifies that, when interpreting &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;ToolboxBitmapAttribute&lt;/span&gt;&lt;/span&gt; declarations, the assembly should look for the indicated resources in a satellite assembly, but with the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;BitmapSuffix&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; configuration value appended to the declared file name." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает, что, когда Интерпретация <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.toolboxbitmapattribute(v=vs.110).aspx">ToolboxBitmapAttribute</a> объявления, сборка должна выглядеть для указанного ресурса во вспомогательную сборку, но с <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.configuration.systemdrawingsection.bitmapsuffix(v=vs.110).aspx"><span xmlns="">BitmapSuffix</span></a> значение конфигурации, добавленным к имени файла объявленный.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.brush(v=vs.110).aspx">Brush</a></td><td data-th="Описание"><div class="section"><p><span id="mt13" class="sentence" data-guid="eaadafb82aa6b42fe093d747754a60f5" data-source="Defines objects used to fill the interiors of graphical shapes such as rectangles, ellipses, pies, polygons, and paths." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет объекты, используемые для заливки внутри графических фигур, таких как прямоугольники, эллипсы, круги, многоугольники и пути.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.brushes(v=vs.110).aspx">Brushes</a></td><td data-th="Описание"><div class="section"><p><span id="mt14" class="sentence" data-guid="10597bdb6b4fa0dcaf45ab8565a5372b" data-source="Brushes for all the standard colors." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Кисти для всех стандартных цветов.</sentencetext></span><span id="mt15" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bufferedgraphics(v=vs.110).aspx">BufferedGraphics</a></td><td data-th="Описание"><div class="section"><p><span id="mt16" class="sentence" data-guid="07b6d7d30c8955c13b17d03f4aac3edf" data-source="Provides a graphics buffer for double buffering." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предоставляет графический буфер для двойной буферизации.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bufferedgraphicscontext(v=vs.110).aspx">BufferedGraphicsContext</a></td><td data-th="Описание"><div class="section"><p><span id="mt17" class="sentence" data-guid="eb4026634a9a2d93f76f53e4793033a6" data-source="Provides methods for creating graphics buffers that can be used for double buffering." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предоставляет методы для создания графических буферов, которые могут использоваться для двойной буферизации.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bufferedgraphicsmanager(v=vs.110).aspx">BufferedGraphicsManager</a></td><td data-th="Описание"><div class="section"><p><span id="mt18" class="sentence" data-guid="73291f9e25402d09a244478146a6e63c" data-source="Provides access to the main buffered graphics context object for the application domain." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предоставляет доступ к объекту контекста основной буферизованной графики для домена приложения.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.colorconverter(v=vs.110).aspx">ColorConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt19" class="sentence" data-guid="3738f0b645ef81c3f5b782877b82bc3c" data-source="Converts colors from one data type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразует цвета из одного типа данных в другой.</sentencetext></span><span id="mt20" class="sentence" data-guid="963f4222b4ea09d061dba7d824b2df60" data-source=" Access this class through the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;TypeDescriptor&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Доступа к этому классу через <a href="https://msdn.microsoft.com/ru-ru/library/system.componentmodel.typedescriptor(v=vs.110).aspx">TypeDescriptor</a>.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.colortranslator(v=vs.110).aspx">ColorTranslator</a></td><td data-th="Описание"><div class="section"><p><span id="mt21" class="sentence" data-guid="274427c1854c7b600a8296f9e09d5621" data-source="Translates colors to and from GDI+ &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Color&lt;/span&gt;&lt;/span&gt; structures." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразует цвета в и из GDI + <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.color(v=vs.110).aspx">Color</a> структуры.</sentencetext></span><span id="mt22" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.font(v=vs.110).aspx">Font</a></td><td data-th="Описание"><div class="section"><p><span id="mt23" class="sentence" data-guid="6ed7ef76ed830f3bfe9b651145c61cb5" data-source="Defines a particular format for text, including font face, size, and style attributes." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет конкретный формат текста, включая начертание шрифта, его размер и атрибуты стиля.</sentencetext></span><span id="mt24" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontconverter(v=vs.110).aspx">FontConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt25" class="sentence" data-guid="fd5b0cf3db30b33f225bdb3a7d8ecf3b" data-source="Converts &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Font&lt;/span&gt;&lt;/span&gt; objects from one data type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразует <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.font(v=vs.110).aspx">Font</a> объектов из одного типа в другой.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontfamily(v=vs.110).aspx">FontFamily</a></td><td data-th="Описание"><div class="section"><p><span id="mt26" class="sentence" data-guid="8bac60dcd3a9ee30efc7f5f786f986e7" data-source="Defines a group of type faces having a similar basic design and certain variations in styles." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет группу гарнитур шрифта со схожим базовым макетом и определенными различиями в стиле.</sentencetext></span><span id="mt27" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontconverter.fontnameconverter(v=vs.110).aspx">FontConverter<span xmlns="">.</span>FontNameConverter</a></td><td data-th="Описание"><div class="section"><p>
+        Этот API поддерживает инфраструктуру продукт, и его не следует использовать напрямую из кода.
+      <span id="mt28" class="sentence" data-guid="284669ea0bfd37a2bce37821d5ead60e" data-source="&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;FontConverter&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;.&lt;/span&gt;&lt;/span&gt;FontNameConverter&lt;/span&gt;&lt;/span&gt; is a type converter that is used to convert a font name to and from various other representations." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontconverter.fontnameconverter(v=vs.110).aspx">FontConverter<span xmlns="">.</span>FontNameConverter</a> Представляет преобразователь типов, который используется для преобразования имени шрифта в другие представления и обратно.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontconverter.fontunitconverter(v=vs.110).aspx">FontConverter<span xmlns="">.</span>FontUnitConverter</a></td><td data-th="Описание"><div class="section"><p>
+        Этот API поддерживает инфраструктуру продукт, и его не следует использовать напрямую из кода.
+      <span id="mt29" class="sentence" data-guid="8b76d30d58a225fd827ba28144ef0351" data-source="Converts font units to and from other unit types." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразует единицах измерения и другие типы.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics(v=vs.110).aspx">Graphics</a></td><td data-th="Описание"><div class="section"><p><span id="mt30" class="sentence" data-guid="b33ab9b3fb908c534155509fcd0c98c4" data-source="Encapsulates a GDI+ drawing surface." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Инкапсулирует поверхность рисования GDI+.</sentencetext></span><span id="mt31" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.icon(v=vs.110).aspx">Icon</a></td><td data-th="Описание"><div class="section"><p><span id="mt32" class="sentence" data-guid="a9a6546349c6329189d87b223e1e3166" data-source="Represents a Windows icon, which is a small bitmap image that is used to represent an object." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Представляет значок Windows, который является точечным рисунком небольшого размера и используется для представления объекта.</sentencetext></span><span id="mt33" class="sentence" data-guid="e6ebeb7dfcfcb09bed82679828d61782" data-source=" Icons can be thought of as transparent bitmaps, although their size is determined by the system." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Значки можно считать прозрачными точечными рисунками, хотя их размер определяется системой.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.iconconverter(v=vs.110).aspx">IconConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt34" class="sentence" data-guid="8f68a578b47929554248aad27f47151a" data-source="Converts an &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Icon&lt;/span&gt;&lt;/span&gt; object from one data type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразует <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.icon(v=vs.110).aspx">Icon</a> объект из одного типа данных в другой.</sentencetext></span><span id="mt35" class="sentence" data-guid="1cc19214f5f07b17cf00e50fed139e81" data-source=" Access this class through the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;TypeDescriptor&lt;/span&gt;&lt;/span&gt; object." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Доступа к этому классу через <a href="https://msdn.microsoft.com/ru-ru/library/system.componentmodel.typedescriptor(v=vs.110).aspx">TypeDescriptor</a> объекта.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.image(v=vs.110).aspx">Image</a></td><td data-th="Описание"><div class="section"><p><span id="mt36" class="sentence" data-guid="f5723765f5b61aa4a03c6f02bdab04a1" data-source="An abstract base class that provides functionality for the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Bitmap&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Metafile&lt;/span&gt;&lt;/span&gt; descended classes." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Абстрактный базовый класс, который предоставляет функциональные возможности для <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.bitmap(v=vs.110).aspx">Bitmap</a> и <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imaging.metafile(v=vs.110).aspx">Metafile</a> производных классов.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imageanimator(v=vs.110).aspx">ImageAnimator</a></td><td data-th="Описание"><div class="section"><p><span id="mt37" class="sentence" data-guid="506f0253a212137fd3e82a6b17c77dcf" data-source="Animates an image that has time-based frames." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Анимирует изображение нажимать на основе времени.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imageconverter(v=vs.110).aspx">ImageConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt38" class="sentence" data-guid="0c29ee2cc7fe67b3359db40f921d085e" data-source="&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;ImageConverter&lt;/span&gt;&lt;/span&gt;  is a class that can be used to convert &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Image&lt;/span&gt;&lt;/span&gt; objects from one data type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imageconverter(v=vs.110).aspx">ImageConverter</a>  — Это класс, который может использоваться для преобразования <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.image(v=vs.110).aspx">Image</a> объектов из одного типа в другой.</sentencetext></span><span id="mt39" class="sentence" data-guid="1cc19214f5f07b17cf00e50fed139e81" data-source=" Access this class through the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;TypeDescriptor&lt;/span&gt;&lt;/span&gt; object." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Доступа к этому классу через <a href="https://msdn.microsoft.com/ru-ru/library/system.componentmodel.typedescriptor(v=vs.110).aspx">TypeDescriptor</a> объекта.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imageformatconverter(v=vs.110).aspx">ImageFormatConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt40" class="sentence" data-guid="8ce3fc3b917bb5657fba69d1ef3f05d7" data-source="&lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;ImageFormatConverter&lt;/span&gt;&lt;/span&gt; is a class that can be used to convert &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;ImageFormat&lt;/span&gt;&lt;/span&gt; objects from one data type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imageformatconverter(v=vs.110).aspx">ImageFormatConverter</a> — Это класс, который может использоваться для преобразования <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.imaging.imageformat(v=vs.110).aspx">ImageFormat</a> объектов из одного типа в другой.</sentencetext></span><span id="mt41" class="sentence" data-guid="1cc19214f5f07b17cf00e50fed139e81" data-source=" Access this class through the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;TypeDescriptor&lt;/span&gt;&lt;/span&gt; object." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Доступа к этому классу через <a href="https://msdn.microsoft.com/ru-ru/library/system.componentmodel.typedescriptor(v=vs.110).aspx">TypeDescriptor</a> объекта.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pen(v=vs.110).aspx">Pen</a></td><td data-th="Описание"><div class="section"><p><span id="mt42" class="sentence" data-guid="381916a41319885dac4d0e85f08eb99e" data-source="Defines an object used to draw lines and curves." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет объект, используемый для рисования прямых линий и кривых.</sentencetext></span><span id="mt43" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pens(v=vs.110).aspx">Pens</a></td><td data-th="Описание"><div class="section"><p><span id="mt44" class="sentence" data-guid="6a34c8a24a6f39c7a895a98009d28c0d" data-source="Pens for all the standard colors." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Перья для всех стандартных цветов.</sentencetext></span><span id="mt45" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pointconverter(v=vs.110).aspx">PointConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt46" class="sentence" data-guid="cea9f3dc9398c1b1b4ac51a3904c46ba" data-source="Converts a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Point&lt;/span&gt;&lt;/span&gt; object from one data type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразует <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.point(v=vs.110).aspx">Point</a> объект из одного типа данных в другой.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rectangleconverter(v=vs.110).aspx">RectangleConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt47" class="sentence" data-guid="eddf415291ffd10ab5b9c77a5f2470fa" data-source="Converts rectangles from one data type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразует прямоугольники из одного типа данных в другой.</sentencetext></span><span id="mt48" class="sentence" data-guid="963f4222b4ea09d061dba7d824b2df60" data-source=" Access this class through the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;TypeDescriptor&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Доступа к этому классу через <a href="https://msdn.microsoft.com/ru-ru/library/system.componentmodel.typedescriptor(v=vs.110).aspx">TypeDescriptor</a>.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.region(v=vs.110).aspx">Region</a></td><td data-th="Описание"><div class="section"><p><span id="mt49" class="sentence" data-guid="0f8d4faf33bf5c7b009c1a84aaef34a0" data-source="Describes the interior of a graphics shape composed of rectangles and paths." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Описывает внутреннюю часть графической формы, состоящей из прямоугольников и контуров.</sentencetext></span><span id="mt50" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.sizeconverter(v=vs.110).aspx">SizeConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt51" class="sentence" data-guid="a28f423eaed8056e71b8461e3553e5fd" data-source="The &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;SizeConverter&lt;/span&gt;&lt;/span&gt; class is used to convert from one data type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.sizeconverter(v=vs.110).aspx">SizeConverter</a> Класс используется для преобразования из одного типа данных в другой.</sentencetext></span><span id="mt52" class="sentence" data-guid="1cc19214f5f07b17cf00e50fed139e81" data-source=" Access this class through the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;TypeDescriptor&lt;/span&gt;&lt;/span&gt; object." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Доступа к этому классу через <a href="https://msdn.microsoft.com/ru-ru/library/system.componentmodel.typedescriptor(v=vs.110).aspx">TypeDescriptor</a> объекта.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.sizefconverter(v=vs.110).aspx">SizeFConverter</a></td><td data-th="Описание"><div class="section"><p><span id="mt53" class="sentence" data-guid="850e7b5bff3aa8c970185be97abf18a9" data-source="Converts &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;SizeF&lt;/span&gt;&lt;/span&gt; objects from one type to another." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Преобразует <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.sizef(v=vs.110).aspx">SizeF</a> объектов из одного типа в другой.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.solidbrush(v=vs.110).aspx">SolidBrush</a></td><td data-th="Описание"><div class="section"><p><span id="mt54" class="sentence" data-guid="f0fd5b98f54a66b52413fbe7f779572b" data-source="Defines a brush of a single color." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет кисть одного цвета.</sentencetext></span><span id="mt55" class="sentence" data-guid="0e16ca280a4284b0b3e22aba946b7bc5" data-source=" Brushes are used to fill graphics shapes, such as rectangles, ellipses, pies, polygons, and paths." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Кисти используются для заливки графических фигур, таких как прямоугольники, эллипсы, круги, многоугольники и пути.</sentencetext></span><span id="mt56" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringformat(v=vs.110).aspx">StringFormat</a></td><td data-th="Описание"><div class="section"><p><span id="mt57" class="sentence" data-guid="6897ccf901558c26ac716be2a915b387" data-source="Encapsulates text layout information (such as alignment, orientation and tab stops) display manipulations (such as ellipsis insertion and national digit substitution) and OpenType features." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Инкапсулирует сведения о структуре текста (например выравнивание, ориентация и позиции табуляции), операции с отображением (такие как вставка многоточия и замена национальных цифр) и возможности OpenType.</sentencetext></span><span id="mt58" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systembrushes(v=vs.110).aspx">SystemBrushes</a></td><td data-th="Описание"><div class="section"><p><span id="mt59" class="sentence" data-guid="cf8327247850a50663929200abcf6f02" data-source="Each property of the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;SystemBrushes&lt;/span&gt;&lt;/span&gt; class is a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;SolidBrush&lt;/span&gt;&lt;/span&gt; that is the color of a Windows display element." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Каждое свойство <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systembrushes(v=vs.110).aspx">SystemBrushes</a> класса <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.solidbrush(v=vs.110).aspx">SolidBrush</a> — это цвет элемента изображения Windows.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systemcolors(v=vs.110).aspx">SystemColors</a></td><td data-th="Описание"><div class="section"><p><span id="mt60" class="sentence" data-guid="a91ee414cc3fce85e4e540324a56bc4b" data-source="Each property of the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;SystemColors&lt;/span&gt;&lt;/span&gt; class is a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Color&lt;/span&gt;&lt;/span&gt; structure that is the color of a Windows display element." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Каждое свойство <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systemcolors(v=vs.110).aspx">SystemColors</a> класса <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.color(v=vs.110).aspx">Color</a> структуры, представляющий собой цвет Windows отображения элемента.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systemfonts(v=vs.110).aspx">SystemFonts</a></td><td data-th="Описание"><div class="section"><p><span id="mt61" class="sentence" data-guid="678993014f95c534e51c3cd385c41693" data-source="Specifies the fonts used to display text in Windows display elements." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает, что элементы отображения шрифтов, используемых для отображения текста в Windows.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systemicons(v=vs.110).aspx">SystemIcons</a></td><td data-th="Описание"><div class="section"><p><span id="mt62" class="sentence" data-guid="c26eb631e0fabf104cefd73a732be1c1" data-source="Each property of the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;SystemIcons&lt;/span&gt;&lt;/span&gt; class is an &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Icon&lt;/span&gt;&lt;/span&gt; object for Windows system-wide icons." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Каждое свойство <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systemicons(v=vs.110).aspx">SystemIcons</a> класса <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.icon(v=vs.110).aspx">Icon</a> объекта для всей системы значков Windows.</sentencetext></span><span id="mt63" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systempens(v=vs.110).aspx">SystemPens</a></td><td data-th="Описание"><div class="section"><p><span id="mt64" class="sentence" data-guid="8ac1ae18e88fbb06bc48b70304c3626a" data-source="Each property of the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;SystemPens&lt;/span&gt;&lt;/span&gt; class is a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Pen&lt;/span&gt;&lt;/span&gt; that is the color of a Windows display element and that has a width of 1 pixel." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Каждое свойство <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.systempens(v=vs.110).aspx">SystemPens</a> класса <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pen(v=vs.110).aspx">Pen</a> — это цвет элемента изображения Windows и шириной 1 пиксель.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.texturebrush(v=vs.110).aspx">TextureBrush</a></td><td data-th="Описание"><div class="section"><p><span id="mt65" class="sentence" data-guid="4baaae85ea3b78d2525a742bd40d2802" data-source="Each property of the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;TextureBrush&lt;/span&gt;&lt;/span&gt; class is a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Brush&lt;/span&gt;&lt;/span&gt; object that uses an image to fill the interior of a shape." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Каждое свойство <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.texturebrush(v=vs.110).aspx">TextureBrush</a> класс <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.brush(v=vs.110).aspx">Brush</a> объекта, использующего изображение для заполнения внутренней части фигуры.</sentencetext></span><span id="mt66" class="sentence" data-guid="c019556cfb338699ba032603603ba7a5" data-source=" This class cannot be inherited." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Этот класс не наследуется.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubclass" alt="System_CAPS_pubclass" src="./System.Drawing Пространство имен_files/IC29808.jpeg" title="System_CAPS_pubclass" xmlns=""></span></td><td data-th="Класс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.toolboxbitmapattribute(v=vs.110).aspx">ToolboxBitmapAttribute</a></td><td data-th="Описание"><div class="section"><p><span id="mt67" class="sentence" data-guid="4e4b1f22af49e9bfac048fc3c16a6f3f" data-source="Allows you to specify an icon to represent a control in a container, such as the Microsoft Visual Studio Form Designer." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Позволяет задать значок для представления элемента управления в контейнере, такие как конструктор форм Microsoft Visual Studio.</sentencetext></span></p></div></td></tr></tbody></table></div></div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Структуры</span></a><div id="Anchor_1" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Anchor_1" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><div class="contentTableWrapper"><table id="idStructures" responsive="true" summary="table"><tbody><tr responsive="true"><th class="iconColumn" scope="col"></th><th class="nameColumn" scope="col">Структура</th><th class="descriptionColumn" scope="col">Описание</th></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubstructure" alt="System_CAPS_pubstructure" src="./System.Drawing Пространство имен_files/IC36774.jpeg" title="System_CAPS_pubstructure" xmlns=""></span></td><td data-th="Структура"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.characterrange(v=vs.110).aspx">CharacterRange</a></td><td data-th="Описание"><div class="section"><p><span id="mt68" class="sentence" data-guid="7e3657573790e7774e1dc1424da42b34" data-source="Specifies a range of character positions within a string." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет диапазон позиций символов в строке.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubstructure" alt="System_CAPS_pubstructure" src="./System.Drawing Пространство имен_files/IC36774.jpeg" title="System_CAPS_pubstructure" xmlns=""></span></td><td data-th="Структура"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.color(v=vs.110).aspx">Color</a></td><td data-th="Описание"><div class="section"><p><span id="mt69" class="sentence" data-guid="e4a9b3498ffe3030445f34ab8526da7a" data-source="Represents an ARGB (alpha, red, green, blue) color." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Представляет цвет ARGB (альфа-канал, красный, зеленый, синий).</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubstructure" alt="System_CAPS_pubstructure" src="./System.Drawing Пространство имен_files/IC36774.jpeg" title="System_CAPS_pubstructure" xmlns=""></span></td><td data-th="Структура"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.point(v=vs.110).aspx">Point</a></td><td data-th="Описание"><div class="section"><p><span id="mt70" class="sentence" data-guid="c329dcc8343104c573585d9687da7489" data-source="Represents an ordered pair of integer x- and y-coordinates that defines a point in a two-dimensional plane." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Представляет упорядоченную пару из целое число со знаком x и y координаты, определяющую точку на двумерной плоскости.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubstructure" alt="System_CAPS_pubstructure" src="./System.Drawing Пространство имен_files/IC36774.jpeg" title="System_CAPS_pubstructure" xmlns=""></span></td><td data-th="Структура"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pointf(v=vs.110).aspx">PointF</a></td><td data-th="Описание"><div class="section"><p><span id="mt71" class="sentence" data-guid="0b161663b8337a9bdf15c840e7e4eed1" data-source="Represents an ordered pair of floating-point x- and y-coordinates that defines a point in a two-dimensional plane." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Представляет упорядоченную пару из чисел с плавающей запятой x и y координаты, определяющую точку на двумерной плоскости.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubstructure" alt="System_CAPS_pubstructure" src="./System.Drawing Пространство имен_files/IC36774.jpeg" title="System_CAPS_pubstructure" xmlns=""></span></td><td data-th="Структура"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rectangle(v=vs.110).aspx">Rectangle</a></td><td data-th="Описание"><div class="section"><p><span id="mt72" class="sentence" data-guid="f4aeecf0544c455cfdd1184e06979e95" data-source="Stores a set of four integers that represent the location and size of a rectangle" xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Содержит набор из четырех целых чисел, определяющих расположение и размер прямоугольника.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubstructure" alt="System_CAPS_pubstructure" src="./System.Drawing Пространство имен_files/IC36774.jpeg" title="System_CAPS_pubstructure" xmlns=""></span></td><td data-th="Структура"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rectanglef(v=vs.110).aspx">RectangleF</a></td><td data-th="Описание"><div class="section"><p><span id="mt73" class="sentence" data-guid="e76b1b582dc5ca54363f06ea7f0e8270" data-source="Stores a set of four floating-point numbers that represent the location and size of a rectangle." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Хранит набор из четырех чисел с плавающей запятой, определяющих расположение и размер прямоугольника.</sentencetext></span><span id="mt74" class="sentence" data-guid="6cead87b8333307a87ce286240b6f4d2" data-source=" For more advanced region functions, use a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Region&lt;/span&gt;&lt;/span&gt; object." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Для расширения функций области используйте <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.region(v=vs.110).aspx">Region</a> объекта.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubstructure" alt="System_CAPS_pubstructure" src="./System.Drawing Пространство имен_files/IC36774.jpeg" title="System_CAPS_pubstructure" xmlns=""></span></td><td data-th="Структура"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.size(v=vs.110).aspx">Size</a></td><td data-th="Описание"><div class="section"><p><span id="mt75" class="sentence" data-guid="2d3b62f3ef712b6482d4bed9e917e751" data-source="Stores an ordered pair of integers, which specify a &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;Height&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;&lt;span class=&quot;mtpsTagOuterHtml&quot;  xmlns=&quot;&quot;&gt;&lt;span&gt;Width&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Сохраняет упорядоченную пару целых чисел, указывающих <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.size.height(v=vs.110).aspx"><span xmlns="">Height</span></a> и <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.size.width(v=vs.110).aspx"><span xmlns="">Width</span></a>.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubstructure" alt="System_CAPS_pubstructure" src="./System.Drawing Пространство имен_files/IC36774.jpeg" title="System_CAPS_pubstructure" xmlns=""></span></td><td data-th="Структура"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.sizef(v=vs.110).aspx">SizeF</a></td><td data-th="Описание"><div class="section"><p><span id="mt76" class="sentence" data-guid="7162480a3669b47535c60338f9b1ff32" data-source="Stores an ordered pair of floating-point numbers, typically the width and height of a rectangle." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Сохраняет упорядоченную пару чисел с плавающей запятой, обычно ширину и высоту прямоугольника.</sentencetext></span></p></div></td></tr></tbody></table></div></div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">интерфейсы</span></a><div id="Anchor_2" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Anchor_2" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><div class="contentTableWrapper"><table id="idInterfaces" responsive="true" summary="table"><tbody><tr responsive="true"><th class="iconColumn" scope="col"></th><th class="nameColumn" scope="col">Интерфейс</th><th class="descriptionColumn" scope="col">Описание</th></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubinterface" alt="System_CAPS_pubinterface" src="./System.Drawing Пространство имен_files/IC141795.jpeg" title="System_CAPS_pubinterface" xmlns=""></span></td><td data-th="Интерфейс"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.idevicecontext(v=vs.110).aspx">IDeviceContext</a></td><td data-th="Описание"><div class="section"><p><span id="mt77" class="sentence" data-guid="9b3d3fe6271addc7b146f78305e52110" data-source="Defines methods for obtaining and releasing an existing handle to a Windows device context." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет методы получения и освобождения существующего дескриптора контекста устройства Windows.</sentencetext></span></p></div></td></tr></tbody></table></div></div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Делегирует</span></a><div id="Anchor_3" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Anchor_3" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><div class="contentTableWrapper"><table id="idDelegates" responsive="true" summary="table"><tbody><tr responsive="true"><th class="iconColumn" scope="col"></th><th class="nameColumn" scope="col">Делегат</th><th class="descriptionColumn" scope="col">Описание</th></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubdelegate" alt="System_CAPS_pubdelegate" src="./System.Drawing Пространство имен_files/IC11304.jpeg" title="System_CAPS_pubdelegate" xmlns=""></span></td><td data-th="Делегат"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics.drawimageabort(v=vs.110).aspx">Graphics<span xmlns="">.</span>DrawImageAbort</a></td><td data-th="Описание"><div class="section"><p><span id="mt78" class="sentence" data-guid="97caaa21ce638b6c5a7b39327d87a50b" data-source="Provides a callback method for deciding when the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;DrawImage&lt;/span&gt;&lt;/span&gt; method should prematurely cancel execution and stop drawing an image." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предоставляет метод обратного вызова в случае, когда <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics.drawimage(v=vs.110).aspx">DrawImage</a> метод должен преждевременно отменить выполнение и прекратить рисование изображения.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubdelegate" alt="System_CAPS_pubdelegate" src="./System.Drawing Пространство имен_files/IC11304.jpeg" title="System_CAPS_pubdelegate" xmlns=""></span></td><td data-th="Делегат"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics.enumeratemetafileproc(v=vs.110).aspx">Graphics<span xmlns="">.</span>EnumerateMetafileProc</a></td><td data-th="Описание"><div class="section"><p><span id="mt79" class="sentence" data-guid="60361250f935dbe483edc5494de9ab7f" data-source="Provides a callback method for the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;EnumerateMetafile&lt;/span&gt;&lt;/span&gt; method." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предоставляет метод обратного вызова для <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics.enumeratemetafile(v=vs.110).aspx">EnumerateMetafile</a> метод.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubdelegate" alt="System_CAPS_pubdelegate" src="./System.Drawing Пространство имен_files/IC11304.jpeg" title="System_CAPS_pubdelegate" xmlns=""></span></td><td data-th="Делегат"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.image.getthumbnailimageabort(v=vs.110).aspx">Image<span xmlns="">.</span>GetThumbnailImageAbort</a></td><td data-th="Описание"><div class="section"><p><span id="mt80" class="sentence" data-guid="d8f433156300a70f6ef8e4cca0e003ad" data-source="Provides a callback method for determining when the &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;GetThumbnailImage&lt;/span&gt;&lt;/span&gt; method should prematurely cancel execution." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Предоставляет метод обратного вызова, позволяющий определить, когда <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.image.getthumbnailimage(v=vs.110).aspx">GetThumbnailImage</a> метод должен преждевременно прекратить выполнение.</sentencetext></span></p></div></td></tr></tbody></table></div></div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Перечисления</span></a><div id="Anchor_4" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Anchor_4" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><div class="contentTableWrapper"><table id="idEnumerations" responsive="true" summary="table"><tbody><tr responsive="true"><th class="iconColumn" scope="col"></th><th class="nameColumn" scope="col">Перечисление</th><th class="descriptionColumn" scope="col">Описание</th></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.contentalignment(v=vs.110).aspx">ContentAlignment</a></td><td data-th="Описание"><div class="section"><p><span id="mt81" class="sentence" data-guid="942940ffe0f9b39bdf19c973501ba574" data-source="Specifies alignment of content on the drawing surface." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает способ выравнивания содержимого на поверхности рисования.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.copypixeloperation(v=vs.110).aspx">CopyPixelOperation</a></td><td data-th="Описание"><div class="section"><p><span id="mt82" class="sentence" data-guid="402577c49246cc6bd2e3814536fc04f1" data-source="Determines how the source color in a copy pixel operation is combined with the destination color to result in a final color." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Определяет, как цвет источника в операции копирования точки объединяется с цветом назначения для получения окончательного цвета.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.fontstyle(v=vs.110).aspx">FontStyle</a></td><td data-th="Описание"><div class="section"><p><span id="mt83" class="sentence" data-guid="7ca3718b4ffb7a348b8c9ff63a9a4a8d" data-source="Specifies style information applied to text." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает сведения о стиле, применяемый к тексту.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphicsunit(v=vs.110).aspx">GraphicsUnit</a></td><td data-th="Описание"><div class="section"><p><span id="mt84" class="sentence" data-guid="1ad75a17ae3ce3f801e8b902a6833f6d" data-source="Specifies the unit of measure for the given data." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает единицу измерения для заданных данных.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.knowncolor(v=vs.110).aspx">KnownColor</a></td><td data-th="Описание"><div class="section"><p><span id="mt85" class="sentence" data-guid="31d6570e0dce0079681a427fba57d8f7" data-source="Specifies the known system colors." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задает известные системные цвета.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rotatefliptype(v=vs.110).aspx">RotateFlipType</a></td><td data-th="Описание"><div class="section"><p><span id="mt86" class="sentence" data-guid="e82d1f775ff108792d10cdaf9833e8c6" data-source="Specifies how much an image is rotated and the axis used to flip the image." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает, сколько изображение поворачивается и ось для зеркального отражения рисунка.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringalignment(v=vs.110).aspx">StringAlignment</a></td><td data-th="Описание"><div class="section"><p><span id="mt87" class="sentence" data-guid="08a385b11f2e280cd1d353a396713ef3" data-source="Specifies the alignment of a text string relative to its layout rectangle." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Задает выравнивание строки текста относительно прямоугольника размещения.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringdigitsubstitute(v=vs.110).aspx">StringDigitSubstitute</a></td><td data-th="Описание"><div class="section"><p><span id="mt88" class="sentence" data-guid="a41c8b87b6ce1b00a44f4d0174ad22e1" data-source="The &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;StringDigitSubstitute&lt;/span&gt;&lt;/span&gt; enumeration specifies how to substitute digits in a string according to a user&#39;s locale or language." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringdigitsubstitute(v=vs.110).aspx">StringDigitSubstitute</a> Перечисление указывает, как выполняется замена знаков в строке в зависимости от языкового стандарта или языка пользователя.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringformatflags(v=vs.110).aspx">StringFormatFlags</a></td><td data-th="Описание"><div class="section"><p><span id="mt89" class="sentence" data-guid="bfd09158673b4217500cd8da7cef1cac" data-source="Specifies the display and layout information for text strings." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает отображаемое и сведения о макете текстовые строки.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringtrimming(v=vs.110).aspx">StringTrimming</a></td><td data-th="Описание"><div class="section"><p><span id="mt90" class="sentence" data-guid="70308cc2644f1e32b1a60b202daaecbe" data-source="Specifies how to trim characters from a string that does not completely fit into a layout shape." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает, как удалить знаки из строки, которая не полностью помещается в форму структуры.</sentencetext></span></p></div></td></tr><tr><td data-th=""><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-pubenum" alt="System_CAPS_pubenum" src="./System.Drawing Пространство имен_files/IC134134.jpeg" title="System_CAPS_pubenum" xmlns=""></span></td><td data-th="Перечисление"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.stringunit(v=vs.110).aspx">StringUnit</a></td><td data-th="Описание"><div class="section"><p><span id="mt91" class="sentence" data-guid="7fdb6b6ff0635225a1a3c93e66c67dc0" data-source="Specifies the units of measure for a text string." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Указывает единицы измерения для строки текста.</sentencetext></span></p></div></td></tr></tbody></table></div></div></div><div><h2 class="LW_CollapsibleArea_TitleDiv"><div><a class="LW_CollapsibleArea_TitleAhref" title="" role="heading"><span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span><span class="LW_CollapsibleArea_Title">Комментарии</span></a><div id="Anchor_5" class="LW_CollapsibleArea_Anchor_Div"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Anchor_5" class="LW_CollapsibleArea_Anchor_Img" title="Щелкните правой кнопкой мыши, чтобы скопировать ссылку на этот раздел и поделиться ей"></a></div><div class="LW_CollapsibleArea_HrDiv"><hr class="LW_CollapsibleArea_Hr"></div></div></h2><div class="sectionblock"><div class="section"><p><span id="mt3" class="sentence" data-guid="1e31b8ac8e8f6522c2c12dc50f0aa675" data-source="The &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Graphics&lt;/span&gt;&lt;/span&gt; class provides methods for drawing to the display device." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.graphics(v=vs.110).aspx">Graphics</a> Класс содержит методы для рисования на устройстве отображения.</sentencetext></span><span id="mt4" class="sentence" data-guid="2292ae8eba5c9931293571de5bfc4b63" data-source=" Classes such as &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Rectangle&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Point&lt;/span&gt;&lt;/span&gt; encapsulate GDI+ primitives." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Классы, такие как <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.rectangle(v=vs.110).aspx">Rectangle</a> и <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.point(v=vs.110).aspx">Point</a> инкапсулируют элементы GDI +.</sentencetext></span><span id="mt5" class="sentence" data-guid="939d3a9de7a2d2194591610f5f9b349e" data-source=" The &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Pen&lt;/span&gt;&lt;/span&gt; class is used to draw lines and curves, while classes derived from the abstract class &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Brush&lt;/span&gt;&lt;/span&gt; are used to fill the interiors of shapes." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.pen(v=vs.110).aspx">Pen</a> Класс используется для рисования прямых линий и кривых, при классы, производные от абстрактного класса <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing.brush(v=vs.110).aspx">Brush</a> используется для заливки фигуры.</sentencetext></span></p><div class="alert"><div class="contentTableWrapper"><table summary="table"><tbody><tr><th align="left" scope="col"><span><img id="s-e6f6a65cf14f462597b64ac058dbe1d0-system-media-system-caps-caution" alt="System_CAPS_caution" src="./System.Drawing Пространство имен_files/IC1429.jpeg" title="System_CAPS_caution" xmlns=""></span><span class="alertTitle">Внимание! </span></th></tr><tr><td><p><span id="mt6" class="sentence" data-guid="e6f5495172dcf01aac22fd1a0409bfef" data-source="Classes within the &lt;span class=&quot;selflink&quot;&gt;System.Drawing&lt;/span&gt; namespace are not supported for use within a Windows or ASP.NET service." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml">Классы в <span class="selflink" xmlns="http://www.w3.org/1999/xhtml">System.Drawing</span> пространства имен не поддерживаются для использования в службе Windows или ASP.NET.</sentencetext></span><span id="mt7" class="sentence" data-guid="aa775bc175e7d3df04199f4f74105137" data-source=" Attempting to use these classes from within one of these application types may produce unexpected problems, such as diminished service performance and run-time exceptions." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Попытка использования этих классов из одного из этих типов приложений может привести к неожиданным проблемам, например уменьшается службы исключения производительности и во время выполнения.</sentencetext></span><span id="mt8" class="sentence" data-guid="54769feea1513e08de2556b9427518d5" data-source=" For a supported alternative, see &lt;span class=&quot;mtpsTagOuterHtml&quot; &gt;&lt;span&gt;Windows Imaging Components&lt;/span&gt;&lt;/span&gt;." xml:space="preserve"><sentencetext xmlns="http://www.w3.org/1999/xhtml"> Поддерживаемые см <a href="https://msdn.microsoft.com/library/windows/desktop/ee719654(v=vs.85).aspx">Windows Imaging Components</a>.</sentencetext></span></p></td></tr></tbody></table></div></div></div></div></div><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#mainBody">Вернуться в начало</a><br></div></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="libraryMemberFilter">
+    <div class="filterContainer">
+        <span>Показ:</span>
+        <label>
+            <input type="checkbox" class="libraryFilterInherited" checked="checked" value="Inherit">Унаследовано
+        </label>
+        <label>
+            <input type="checkbox" class="libraryFilterProtected" checked="checked" value="Protected">Защищен
+        </label>
+    </div>
+</div>
+    
+<input type="hidden" id="libraryMemberFilterEmptyWarning" value="Для текущих настроек фильтра нет доступных членов.">
+
+
+
+    </div>
+<div id="rightNavigationMenu" ms.cmpgrp="right nav" style="position: fixed; margin-left: 3px; top: 60px;">
+    <div id="mobileButtons">
+        
+    </div>
+    <div id="navMain">
+        <div id="closeNavigation">
+            <a class="tocCloseSmall" id="closeButton"></a>
+        </div>
+        <div id="navigationButtons">
+            <a id="isd_print" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(d=printer,v=vs.110).aspx" rel="nofollow"><ins class="print"></ins>Печать </a>
+            <a id="isd_printABook2" href="https://msdn.microsoft.com/ru-ru/library/export/help/?returnurl=%2fru-ru%2flibrary%2fsystem.drawing(v%3dvs.110).aspx">
+                <ins class="export"></ins>Экспорт (<span class="count">0</span>)
+            </a>
+            <a id="isdShare" href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#" role="button" aria-expanded="false">
+                <ins class="share"></ins>Общий доступ
+            </a>
+            <div id="socials" style="display: none">
+                <a class="isdFacebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmsdn.microsoft.com%2Fru-ru%2Flibrary%2Fsystem.drawing(v%3Dvs.110).aspx" aria-label="Поделиться в Facebook">
+                    <ins class="facebook"></ins>
+                </a>
+                <a class="isdTwitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fmsdn.microsoft.com%2Fru-ru%2Flibrary%2Fsystem.drawing(v%3Dvs.110).aspx&amp;text=System.Drawing%20%D0%9F%D1%80%D0%BE%D1%81%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%82%D0%B2%D0%BE%20%D0%B8%D0%BC%D0%B5%D0%BD&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fmsdn.microsoft.com%2Fru-ru%2Flibrary%2Fsystem.drawing(v%3Dvs.110).aspx" aria-label="Поделиться в Twitter">
+                    <ins class="twitter"></ins>
+                </a>
+                <a class="isdGooglePlus" href="https://plus.google.com/share?url=https%3A%2F%2Fmsdn.microsoft.com%2Fru-ru%2Flibrary%2Fsystem.drawing(v%3Dvs.110).aspx" aria-label="Поделиться в Google+">
+                    <ins class="googlePlus"></ins>
+                </a>
+            </div>
+        </div>
+        <div id="indoc_toc" style="" ms.cmpgrp="indoc toc">
+            <div id="indoc_title">СОДЕРЖАНИЕ СТАТЬИ</div>
+            <ul id="indoc_toclist"><li data-index="0" class="active"><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Классы">Классы</a></li><li data-index="1" class=""><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Структуры">Структуры</a></li><li data-index="2" class=""><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#интерфейсы">интерфейсы</a></li><li data-index="3" class=""><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Делегирует">Делегирует</a></li><li data-index="4" class=""><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Перечисления">Перечисления</a></li><li data-index="5" class=""><a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#Комментарии">Комментарии</a></li></ul>
+        </div>
+    </div>
+</div>
+<div id="rightNavigationMenuThumbnail" class="rightNavigationMenuThumbnail">
+</div>
+
+
+
+
+
+        </div>
+        <div class="clear"></div>
+
+        
+
+<input name="__RequestVerificationToken" type="hidden" value="d9F7rfsjaKS8g8phGGLY_B5Yim9gUUhQTJELUoiidfpdOW49wPgxceGJ3naJGtfAjXvVJ9S_3legsRgzv-Nkj_2zWU41">
+<input id="ratingValueSubmitUrl" type="hidden" value="https://msdn.microsoft.com/ru-ru/library/feedback/rate/system.drawing(v=vs.110).aspx">
+<input id="ratingAdditionalSubmitUrl" type="hidden" value="https://msdn.microsoft.com/ru-ru/library/feedback/additional/system.drawing(v=vs.110).aspx">
+<input id="isTopicRated" type="hidden" value="false">
+
+
+
+
+    <div id="lib-footer">
+        
+
+    
+    <link type="text/css" rel="stylesheet">
+    
+        
+    <div id="ux-footer" class="" style="" dir="ltr" ms.pgarea="footer">
+
+
+    <div id="standardRatingBefore" class="clear stdr-container-before"></div>
+    <div id="standardRating" class="stdr-container" ms.pgarea="body" style="width: 1349px; margin-left: 0px; display: block;">
+        <div class="stdr-close" style="display: none;"></div>
+        <div class="stdr-vote stdr-content">
+            <div class="stdr-content">
+                <span class="stdr-votetitle">Была ли эта страница полезной?</span>
+                <button class="stdr-yes" aria-label="Да, эта страница была полезной">Да</button>
+                <button class="stdr-no" aria-label="Нет, эта страница не была полезной">Нет</button>
+                <input id="s_ratingValue" type="hidden" value="">
+            </div>
+        </div>
+        <div class="stdr-feedback" style="display: none">
+            <div class="stdr-form">
+                <div class="stdr-fieldtitle">Дополнительный отзыв?</div>
+                <textarea class="stdr-detail" rows="6" maxlength="1500"></textarea>
+                <div>
+                    <span class="stdr-count"><span class="stdr-charcnt">1500</span> символов осталось</span>
+                    <div class="stdr-buttons">
+                        <button class="stdr-provide" aria-label="Отправить дополнительный отзыв">Отправить</button>
+                        <button class="stdr-skip" aria-label="Пропустить дополнительный отзыв">Пропустить</button>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="stdr-thanks" style="display: none">
+            <div class="stdr-content">
+                <span class="stdr-thankyou">Спасибо!</span>
+                <span class="stdr-appreciate">Благодарим за отзыв. Ваше мнение очень важно для нас.</span>
+            </div>
+        </div>
+
+        
+        <div id="contentFeedbackQAContainer" style="display: none;"></div>
+    </div>
+    <div id="standardRatingPlaceholder" style="display: none"></div>
+    
+
+        <footer class="top" role="navigation" aria-label="footer">
+            <div data-fragmentname="LeftLinks" id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Центры разработки</h4>
+    <ul class="links">
+      <li>
+        <a href="https://dev.windows.com/" id="LeftLinks_2148_1" class="windowsBlue" xmlns="http://www.w3.org/1999/xhtml">Windows</a>
+      </li>
+      <li>
+        <a href="https://dev.office.com/" id="LeftLinks_2148_3" class="office" xmlns="http://www.w3.org/1999/xhtml">Office</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/vstudio" id="LeftLinks_2148_4" class="visualStudio" xmlns="http://www.w3.org/1999/xhtml">Visual Studio</a>
+      </li>
+      <li>
+        <a href="https://azure.microsoft.com/ru-ru/documentation/" target="_blank" id="LeftLinks_2148_12" xmlns="http://www.w3.org/1999/xhtml">Microsoft Azure</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/developer-centers-msdn" id="LeftLinks_2148_5" xmlns="http://www.w3.org/1999/xhtml">Дополнительно...</a>
+      </li>
+    </ul>
+  </div>
+</div>
+            <div id="rightLinks">
+                <div data-fragmentname="CenterLinks1" id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Обучение</h4>
+    <ul class="links">
+      <li>
+        <a href="https://mva.microsoft.com/" id="CenterLinks1_2151_4" xmlns="http://www.w3.org/1999/xhtml">Microsoft Virtual Academy</a>
+      </li>
+      <li>
+        <a href="https://channel9.msdn.com/browse/series?lang=ru" id="CenterLinks1_2151_5" xmlns="http://www.w3.org/1999/xhtml">Канал Channel 9</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/ru-ru/magazine/default.aspx" id="CenterLinks1_2151_7" xmlns="http://www.w3.org/1999/xhtml">Журнал MSDN</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks2" id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Сообщество</h4>
+    <ul class="links">
+      <li>
+        <a href="https://blogs.msdn.com/b/rudevnews/" id="CenterLinks2_2151_17" xmlns="http://www.w3.org/1999/xhtml">Новости</a>
+      </li>
+      <li>
+        <a href="https://social.msdn.microsoft.com/forums/ru-ru/home" id="CenterLinks2_2151_8" xmlns="http://www.w3.org/1999/xhtml">Форумы</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/ru-ru/jj129558" id="CenterLinks2_2151_9" xmlns="http://www.w3.org/1999/xhtml">Блоги</a>
+      </li>
+      <li>
+        <a href="https://www.codeplex.com/" id="CenterLinks2_2151_10" xmlns="http://www.w3.org/1999/xhtml">Codeplex</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks3" id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Свяжитесь с нами</h4>
+    <ul class="links">
+      <li>
+        <a href="https://msdn.microsoft.com/hh361695" id="CenterLinks3_2151_11" xmlns="http://www.w3.org/1999/xhtml">Самостоятельно</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentname="CenterLinks4" id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml" class="nth-child-4n">
+  
+  <div class="linkList">
+    <h4 class="linkListTitle">Программы</h4>
+    <ul class="links">
+      <li>
+        <a href="https://bizspark.microsoft.com/" id="CenterLinks4_2151_13" xmlns="http://www.w3.org/1999/xhtml">BizSpark (для стартапов)</a>
+      </li>
+      <li>
+        <a href="https://imagine.microsoft.com/" id="CenterLinks4_2151_23" xmlns="http://www.w3.org/1999/xhtml">Microsoft Imagine (for students)</a>
+      </li>
+    </ul>
+  </div>
+</div>
+            </div>
+        </footer>
+
+        <footer class="bottom" role="contentinfo">
+            <span class="localeContainer">
+                
+    <form class="selectLocale" id="selectLocaleForm" action="https://msdn.microsoft.com/ru-ru/selectlocale-dmc">
+        <input type="hidden" name="fromPage" value="https%3a%2f%2fmsdn.microsoft.com%2fru-ru%2flibrary%2fsystem.drawing(v%3dvs.110).aspx">
+        <a href="https://msdn.microsoft.com/ru-ru/library/system.drawing(v=vs.110).aspx#" onclick="$(&#39;#selectLocaleForm&#39;).submit();return false;" title="Измените язык">Россия (Pусский)</a>
+    </form>
+
+
+            </span>
+
+            <div data-fragmentname="BottomLinks" id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <ul class="links horizontal">
+      <li>
+        <a href="https://msdn.microsoft.com/newsletter.aspx" id="BottomLinks_2148_7" xmlns="http://www.w3.org/1999/xhtml">Информационный бюллетень</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/dn529288" id="BottomLinks_2148_8" xmlns="http://www.w3.org/1999/xhtml">Конфиденциальность и файлы cookie</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/cc300389" id="BottomLinks_2148_9" xmlns="http://www.w3.org/1999/xhtml">Условия использования</a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/" id="BottomLinks_2148_10" xmlns="http://www.w3.org/1999/xhtml">Товарные знаки</a>
+      </li>
+    </ul>
+  </div>
+</div>
+            <span class="logoLegal">
+                <span class="logoSpan clip67x13" role="img" tabindex="0" aria-label="microsoft logo">
+                    <img alt="logo" class="logo" src="./System.Drawing Пространство имен_files/HeaderFooterSprite.png">
+                </span>
+                <span class="copyright">© 2017 Microsoft</span>
+            </span>
+        </footer>
+    </div>
+    
+
+    </div>
+
+
+        <div class="footerPrintView">
+            <div class="footerCopyrightPrintView">© 2017 Microsoft</div>
+        </div>
+
+        
+        
+
+        
+        
+        
+
+    <input id="tocPaddingPerLevel" type="hidden" value="17">
+
+
+
+        <input id="MtpsDevice" type="hidden" value="Default">
+
+
+<!--[CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]-->
+
+        
+        
+        
+            
+        
+
+<!--[CDATA[ WebTrends view model not available or IncludeLegacyWebTrendsScriptInGlobal feature flag is off]]-->
+
+
+
+
+<div id="globalRequestVerification">
+    <input name="__RequestVerificationToken" type="hidden" value="1e_UMs3pL5IiI0M8FVC2RJEqQmNC6LeQ_XvlROtYHefB-E-PDsizbKZTwxtWBBwhyg8uQeZHlYXYgLQbmW6P4xYwJEg1">
+</div>
+
+
+    </div>
+
+    
+    
+
+    
+
+    
+<script type="text/javascript" class="mtps-injected">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"ttf\": \"https://i-msdn.sec.s-msft.com\"\r\n});\r\n/**/" },
+	{ txt: "//\n\n        window.appInsightsId = \u00275eb1b2eb-c47a-497a-a7ac-a1c230b2882f\u0027;\n        //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:Layout,2:Header,3:Breadcrumbs,4:LibraryRightNavigationMenu,4:PrintExportButton,5:StandardRating,2:Footer,0:Topic,3:ResponsiveSupport,0:AppInsightsPerf,3:ResponsiveToc,0:ABTestControl,4:WEDCS,3:CmpgrpForHeader,1:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Themes/Base/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Library/Content:3,/Areas/Library/Themes/Base/Content:4,/Areas/Global/Content:5\u0026amp;hashKey=380CB181B38C487101990C8F514C8659\u0026amp;v=26675691F0E077160D83A0BA18CB3869" },
+	{ url: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026minimumTermLength=2\u0026pgArea=header\u0026brand=Msdn\u0026loc=ru-ru\u0026focusOnInit=false\u0026emptyWatermark=true\u0026searchButtonTooltip=Поиск в MSDN" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Areas/Epx/Themes/Base/Content/JumpRedirect.js" },
+	{ txt: "//\n    MTPS = window.MTPS || {};\n    MTPS.Translation = window.MTPS.Translation || {};\n\n    MTPS.Translation.TranslationType =  0;\n    \n    \n        \n        MTPS.Translation.EditorLink = {\n            includeEditor : 0,\n            editLink: \"https://msdn.microsoft.com/ru-ru/library/translation/edit/system.drawing(v=vs.110).aspx\",\n            editLinkText: \"Предложите более удачный вариант перевода\"\n        };\n        \n    //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:jquery.popup,0:Translator;/Areas/Library/Content:0\u0026amp;hashKey=16D24150BAC1A18066CEC17E9B28E03E\u0026amp;v=26675691F0E077160D83A0BA18CB3869" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Развернуть\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Свернуть\u0027; MTPS.LocalizedStrings.EnhancedExpandTooltip = \u0027Щелкните, чтобы развернуть. Щелкните дважды, чтобы развернуть все.\u0027; MTPS.LocalizedStrings.EnhancedCollapseTooltip = \u0027Щелкните, чтобы свернуть. Щелкните дважды, чтобы свернуть все.\u0027; MTPS.LocalizedStrings.ExpandAllButtonTooltip = \u0027Развернуть все\u0027; MTPS.LocalizedStrings.CollapseAllButtonTooltip = \u0027Свернуть все\u0027;" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=D8D1FFAA6CA68460B7EFA5923975CA44\u0026amp;v=26675691F0E077160D83A0BA18CB3869" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</script>
+
+<div id="overlayMask"></div><div id="popup-loading0" class="popup-loading" style="display: none; z-index: 210; width: auto; height: auto; left: 799.797px; top: 1379px;">loading...</div><div id="popup0" class="MTPopup" style="z-index: 210; width: auto; height: auto; max-width: 161px; left: 799.797px; top: 1379px; display: none;"><div class="popup-main" style="z-index: 210;"><div class="popup-inner"> This class cannot be inherited.<div class="EditTranslation"><a href="https://msdn.microsoft.com/ru-ru/library/translation/edit/system.drawing(v=vs.110).aspx?sentenceGuid=c019556cfb338699ba032603603ba7a5">Предложите более удачный вариант перевода</a></div></div></div></div><script src="./System.Drawing Пространство имен_files/broker-config.js.Без названия"></script></body></html>
