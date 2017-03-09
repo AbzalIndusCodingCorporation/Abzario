@@ -18,7 +18,6 @@ namespace Abzario {
         const int spwnY = 300;
         Timer timer = new Timer();
 
-
         public Form1() {
             InitializeComponent();
         }
